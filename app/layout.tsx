@@ -6,15 +6,15 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Mohit Uchit - Backend Engineer | Automation Developer",
+  title: "Ankur Shukla - Senior Software Engineer | Backend Developer",
   description:
-    "Backend Engineer specializing in scalable REST APIs, cloud automation, and secure web systems. Expert in Node.js, MongoDB, AWS, and cybersecurity.",
+    "Senior Software Engineer specializing in scalable REST APIs, and secure web systems. Expert in Node.js, MongoDB, AWS.",
   keywords:
-    "backend engineer, node.js developer, API development, cloud automation, cybersecurity, freelance developer",
-  authors: [{ name: "Mohit Uchit" }],
+    "senior software engineer, node.js developer, API development, freelance developer",
+  authors: [{ name: "Ankur Shukla" }],
   openGraph: {
-    title: "Mohit Uchit - Backend Engineer",
-    description: "Backend Engineer specializing in scalable REST APIs and cloud automation",
+    title: "Ankur Shukla - Senior Software Engineer",
+    description: "Senior Software Engineer specializing in scalable REST APIs",
     type: "website",
   },
     generator: 'v0.dev'

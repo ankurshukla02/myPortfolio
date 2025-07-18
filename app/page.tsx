@@ -115,9 +115,9 @@ function FloatingParticles() {
 
 function CodeBlock() {
   const codeLines = [
-    "const mohit = new BackendEngineer();",
-    "mohit.skills = ['Node.js', 'Redis', 'MySQL'];",
-    "mohit.deploy('production');",
+    "const ankur = new SeniorSoftwareEngineer();",
+    "ankur.skills = ['Node.js', 'Redis', 'MySQL'];",
+    "ankur.deploy('production');",
     "console.log('System Online ✓');",
   ]
 
@@ -209,7 +209,7 @@ export default function Portfolio() {
     { id: "about", label: "About" },
     { id: "experience", label: "Experience" },
     { id: "services", label: "Services" },
-    { id: "projects", label: "Projects" },
+    // { id: "projects", label: "Projects" },
     { id: "resume", label: "Resume" },
     { id: "contact", label: "Contact" },
   ]
@@ -217,7 +217,7 @@ export default function Portfolio() {
   const services = [
     {
       icon: <Server className="w-8 h-8" />,
-      title: "Backend Development",
+      title: "Senior Software Engineer",
       description: "Scalable REST APIs with Node.js, Express, and modern frameworks",
       gradient: "from-slate-600 to-slate-800",
     },
@@ -227,30 +227,30 @@ export default function Portfolio() {
       description: "Seamless third-party integrations and comprehensive API testing",
       gradient: "from-blue-600 to-slate-700",
     },
-    {
-      icon: <Bot className="w-8 h-8" />,
-      title: "Telegram Bots",
-      description: "Custom bots for automation, notifications, and user engagement",
-      gradient: "from-slate-700 to-blue-800",
-    },
-    {
-      icon: <Zap className="w-8 h-8" />,
-      title: "Task Automation",
-      description: "Selenium scripts and JavaScript automation for repetitive tasks",
-      gradient: "from-slate-600 to-slate-800",
-    },
+    // {
+    //   icon: <Bot className="w-8 h-8" />,
+    //   title: "Telegram Bots",
+    //   description: "Custom bots for automation, notifications, and user engagement",
+    //   gradient: "from-slate-700 to-blue-800",
+    // },
+    // {
+    //   icon: <Zap className="w-8 h-8" />,
+    //   title: "Task Automation",
+    //   description: "Selenium scripts and JavaScript automation for repetitive tasks",
+    //   gradient: "from-slate-600 to-slate-800",
+    // },
     {
       icon: <Database className="w-8 h-8" />,
       title: "Database Design",
       description: "Full-stack portals with secure backend architecture",
       gradient: "from-blue-700 to-slate-800",
     },
-    {
-      icon: <Shield className="w-8 h-8" />,
-      title: "Security Testing",
-      description: "OWASP ZAP testing and ethical hacking security assessments",
-      gradient: "from-slate-700 to-slate-900",
-    },
+    // {
+    //   icon: <Shield className="w-8 h-8" />,
+    //   title: "Security Testing",
+    //   description: "OWASP ZAP testing and ethical hacking security assessments",
+    //   gradient: "from-slate-700 to-slate-900",
+    // },
   ]
 
   const projects = [
@@ -294,7 +294,6 @@ export default function Portfolio() {
 
   const expertSkills = [
     "JavaScript",
-    "C++",
     "SQL",
     "Node.js",
     "Express.js",
@@ -305,10 +304,9 @@ export default function Portfolio() {
     "Git",
     "GitHub",
     "MySQL",
-    "Linux",
+    "PHP Laravel",
+    "Docker",
     "AWS S3",
-    "OWASP ZAP",
-    "Postman",
   ]
 
   const learningSkills = [
@@ -320,8 +318,8 @@ export default function Portfolio() {
 
   const downloadResume = () => {
     const link = document.createElement("a")
-    link.href = "/resume/Mohit_Uchit_Resume.pdf"
-    link.download = "Mohit_Uchit_Resume.pdf"
+    link.href = "/resume/Ankur_resume.pdf"
+    link.download = "Ankur_resume.pdf"
     link.target = "_blank"
     document.body.appendChild(link)
     link.click()
@@ -386,14 +384,14 @@ export default function Portfolio() {
 🌐 From: Portfolio Website`
 
       const response = await fetch(
-        `https://api.telegram.org/bot8067555330:AAEB2Vmf4oXipUFozzqiYoyu6gd3vwXRIIY/sendMessage`,
+        `https://api.telegram.org/bot8163560365:AAHsbcgPa4-Z4YUHej9MG13lo3U2lTyIyDM/sendMessage`,
         {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            chat_id: "6588896137",
+            chat_id: "889895554",
             text: telegramMessage,
             parse_mode: "HTML",
           }),
@@ -463,8 +461,8 @@ export default function Portfolio() {
                   }}
                 >
                   <Image
-                    src="/images/mohit-profile.jpg"
-                    alt="Mohit Uchit"
+                    src="/images/ankur-profile.png"
+                    alt="Ankur Shukla"
                     width={48}
                     height={48}
                     className="w-full h-full object-cover"
@@ -474,9 +472,9 @@ export default function Portfolio() {
               </motion.div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-                  Mohit Uchit
+                  Ankur Shukla
                 </span>
-                <div className="text-xs text-slate-400 font-mono">Backend Engineer</div>
+                <div className="text-xs text-slate-400 font-mono">Senior Software Engineer</div>
               </div>
             </motion.div>
 
@@ -567,7 +565,7 @@ export default function Portfolio() {
                     filter: "drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3))",
                   }}
                 >
-                  Backend Engineer
+                  Software Engineer
                 </span>
               </h1>
             </motion.div>
@@ -578,9 +576,9 @@ export default function Portfolio() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5 }}
             >
-              <span className="text-blue-400">Cloud Automation</span> •{" "}
-              <span className="text-slate-300">Cybersecurity Expert</span> •{" "}
-              <span className="text-blue-300">API Specialist</span>
+              <span className="text-blue-400">Website Development</span> •{" "}
+              <span className="text-slate-300">App Development</span> •{" "}
+              <span className="text-blue-300">API Development</span>
             </motion.p>
 
             <motion.div
@@ -621,7 +619,7 @@ export default function Portfolio() {
 
               <motion.div whileHover={{ scale: 1.05, y: -5 }} whileTap={{ scale: 0.95 }}>
                 <Button
-                  onClick={() => scrollToSection("projects")}
+                  onClick={() => scrollToSection("experience")}
                   variant="outline"
                   className="border-2 border-slate-600 text-slate-300 hover:bg-slate-800/50 hover:text-white px-10 py-4 text-lg rounded-xl transition-all duration-300 shadow-lg"
                   style={{
@@ -629,7 +627,7 @@ export default function Portfolio() {
                   }}
                 >
                   <Globe className="w-5 h-5 mr-2" />
-                  View Projects
+                  View Experience
                 </Button>
               </motion.div>
             </motion.div>
@@ -672,7 +670,7 @@ export default function Portfolio() {
                 viewport={{ once: true }}
               >
                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  Backend Engineer with expertise in <span className="text-blue-400 font-semibold">Node.js</span>,{" "}
+                  Senior Software Engineer with expertise in <span className="text-blue-400 font-semibold">Node.js</span>,{" "}
                   <span className="text-slate-200 font-semibold">MySQL</span>, and{" "}
                   <span className="text-blue-300 font-semibold">Redis</span>, delivering scalable APIs and optimizing
                   system performance by up to <span className="text-green-400 font-bold">45%</span>. Currently working
@@ -699,10 +697,10 @@ export default function Portfolio() {
                   >
                     <div className="flex items-center space-x-3 mb-2">
                       <Lock className="w-6 h-6 text-green-400" />
-                      <span className="text-green-400 font-mono font-semibold">Security</span>
+                      <span className="text-green-400 font-mono font-semibold">Development</span>
                     </div>
                     <p className="text-3xl font-bold text-white mb-1">100%</p>
-                    <p className="text-sm text-slate-400">Penetration Tests</p>
+                    <p className="text-sm text-slate-400">API Development</p>
                   </motion.div>
 
                   <motion.div
@@ -717,7 +715,7 @@ export default function Portfolio() {
                       <Activity className="w-6 h-6 text-blue-400" />
                       <span className="text-blue-400 font-mono font-semibold">Performance</span>
                     </div>
-                    <p className="text-3xl font-bold text-white mb-1">45%</p>
+                    <p className="text-3xl font-bold text-white mb-1">80%</p>
                     <p className="text-sm text-slate-400">Optimization</p>
                   </motion.div>
                 </div>
@@ -743,8 +741,8 @@ export default function Portfolio() {
                     }}
                   >
                     <Image
-                      src="/images/mohit-profile.jpg"
-                      alt="Mohit Uchit - Backend Engineer"
+                      src="/images/ankur-profile.png"
+                      alt="Ankur Shukla - Senior Software Engineer"
                       width={320}
                       height={320}
                       className="w-full h-full object-cover"
@@ -911,7 +909,7 @@ export default function Portfolio() {
                       <div>
                         <h3 className="text-2xl font-semibold text-blue-400 flex items-center mb-2">
                           <Server className="w-6 h-6 mr-3" />
-                          Backend Engineer
+                          Senior Software Engineer
                         </h3>
                         <p className="text-xl text-white font-medium">Truckpedia</p>
                         <p className="text-slate-400 flex items-center">
@@ -920,36 +918,50 @@ export default function Portfolio() {
                         </p>
                       </div>
                       <span className="text-blue-400 font-medium font-mono bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/30 shadow-lg">
-                        Oct 2023 - Present
+                        Nov 2022 - Present
                       </span>
                     </div>
                     <ul className="text-slate-300 space-y-3">
                       <li className="flex items-start">
-                        <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Developed scalable solutions using MySQL, Sequelize, Node.js, Redis, and BullMQ
+                        Truckpedia is an innovative platform designed to optimise trucking operations by automating up to 80% of manual processes. Featuring an integrated Transportation Management System (TMS), it enables seamless connectivity between businesses and shippers. The platform also incorporates advanced marketing tools to enhance visibility, improve client engagement, and drive operational efficiency, fostering measurable growth in the trucking industry.
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Designed and implemented REST APIs and integrated third-party APIs for seamless system
-                        communication
+                        Enhanced a digital payments module by integrating Melio, streamlining payment workflows for business users.
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Optimized cron jobs to automate scheduled tasks, enhancing operational efficiency
+                        Established EDI communication on the platform using STEDI and Orderful, enabling efficient inter-company exchange of standardised business documents.
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Built a marketing campaign system to streamline promotional activities and customer engagement
+                        Integrated tracking solutions with Samsara and Motive to provide real-time visibility into truck and driver locations.
+
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Created a QR code system for transport managers to improve tracking and security
+                        Utilised PC Miler and Google Maps API to calculate precise distances between stops, optimising logistics and route planning.
                       </li>
                       <li className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">★</span>
                         <span className="text-green-400 font-semibold">
-                          Reduced ORM-based database query complexity by 39%, boosting performance and scalability
+                          
+                           Migrated the codebase from PHP to Node.js, significantly improving application performance and user experience.
                         </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                       Integrated factoring services with RTS, Wex, and TAFS to facilitate systematised invoice detail uploads.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Mechanised bulk data integration for drivers, trucks, trailers, and customers using CSV file processing, enhancing platform efficiency.
+
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                       Led and supervised a team of engineers, solving complex problems and delivering key projects within deadlines.
+
                       </li>
                     </ul>
                   </CardContent>
@@ -979,37 +991,68 @@ export default function Portfolio() {
                       <div>
                         <h3 className="text-2xl font-semibold text-blue-400 flex items-center mb-2">
                           <Code className="w-6 h-6 mr-3" />
-                          Backend Engineer
+                          Software Engineer
                         </h3>
-                        <p className="text-xl text-white font-medium">Freelance Projects</p>
+                        <p className="text-xl text-white font-medium">Eleve Media PVT. LTD</p>
                         <p className="text-slate-400 flex items-center">
                           <Wifi className="w-4 h-4 mr-2" />
-                          Remote
+                          Gurugram, Haryana
                         </p>
                       </div>
                       <span className="text-blue-400 font-medium font-mono bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/30 shadow-lg">
-                        Feb 2022 - Jun 2023
+                        April 2020 - November 2022
                       </span>
                     </div>
                     <ul className="text-slate-300 space-y-3">
                       <li className="flex items-start">
-                        <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Built a Linode Akamai Cloud Manager Bot using Node.js, automating proxy creation faster than the
-                        Akamai portal
+                        Developing a leading platform that enables brands to connect with influencers in their niche, organise campaigns, and access detailed campaign reports for performance tracking and optimisation.
                       </li>
                       <li className="flex items-start">
                         <span className="text-green-400 mr-3 mt-1">★</span>
                         <span className="text-green-400 font-semibold">
-                          Improved backend efficiency by 45% through reduced code complexity and enhanced performance
+                          Successfully expanded and managed key components of the Eleve platform, ensuring seamless functionality and user experience.
                         </span>
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Integrated Redis to optimize cron jobs, significantly speeding up server operations
+                        Executed real-time, bidirectional, event-based communication using WebSockets, enabling dynamic interactions between the browser and server.
                       </li>
                       <li className="flex items-start">
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
-                        Designed backend architecture to balance complexity, scalability, and reliability
+                        Integrated an Amazon SQS system leveraging MongoDB and Redis for efficient message queuing and processing.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                       Integrated LinkedIn APIs to fetch and store data in MongoDB, enabling streamlined access to professional insights.
+
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Improved influencer mining algorithms for platforms like Twitter, Instagram, TikTok, and LinkedIn, based on custom criteria to identify potential influencers.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Mechanized the generation of Excel and CSV documents for presenting detailed influencer reports.
+
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Managed and stored multimedia assets securely using AWS S3.
+
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Executed an Elasticsearch database to provide advanced filtering and search capabilities for influencer listings, enhancing user engagement.
+                      </li>
+                       <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Improved and managed user notification systems within the application to improve user interactions.
+
+                      </li>
+                       <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Effectively handled and maintained multiple code repositories simultaneously, ensuring consistent quality and delivery across projects.
+
                       </li>
                     </ul>
                   </CardContent>
@@ -1081,123 +1124,6 @@ export default function Portfolio() {
 
       {/* Enhanced Projects Section with 3D effects */}
       <section id="projects" className="py-20 px-4 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <motion.h2
-              className="text-5xl font-bold text-center mb-16 relative"
-              whileInView={{ scale: [0.8, 1] }}
-              transition={{ duration: 0.6 }}
-              viewport={{ once: true }}
-            >
-              <span className="bg-gradient-to-r from-white to-slate-300 bg-clip-text text-transparent">
-                Featured Projects
-              </span>
-            </motion.h2>
-
-            <div className="grid md:grid-cols-2 gap-8">
-              {projects.map((project, index) => (
-                <motion.div
-                  key={project.name}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  whileHover={{ scale: 1.03, y: -10, rotateY: 5 }}
-                  className="group"
-                  style={{ transformStyle: "preserve-3d" }}
-                >
-                  <Card
-                    className="h-full bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-md border-slate-700/30 hover:border-slate-600/60 transition-all duration-300 overflow-hidden shadow-2xl"
-                    style={{
-                      boxShadow: "0 25px 50px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-                    }}
-                  >
-                    <div
-                      className={`aspect-video bg-gradient-to-br ${project.color} flex items-center justify-center relative overflow-hidden`}
-                    >
-                      <motion.div
-                        whileHover={{ rotate: 360, scale: 1.3, rotateY: 15 }}
-                        transition={{ duration: 0.8 }}
-                        className="text-white/90 z-10 relative"
-                        style={{ transformStyle: "preserve-3d" }}
-                      >
-                        {project.icon}
-                      </motion.div>
-
-                      <div className="absolute inset-0 bg-black/20"></div>
-
-                      {/* Subtle animated particles */}
-                      <div className="absolute inset-0">
-                        {Array.from({ length: 15 }).map((_, i) => (
-                          <motion.div
-                            key={i}
-                            className="absolute w-1 h-1 bg-white/20 rounded-full"
-                            style={{
-                              left: `${Math.random() * 100}%`,
-                              top: `${Math.random() * 100}%`,
-                            }}
-                            animate={{
-                              y: [0, -20, 0],
-                              opacity: [0.2, 0.6, 0.2],
-                            }}
-                            transition={{
-                              duration: 3 + Math.random() * 2,
-                              repeat: Number.POSITIVE_INFINITY,
-                              delay: Math.random() * 2,
-                            }}
-                          />
-                        ))}
-                      </div>
-                    </div>
-
-                    <CardContent className="p-8">
-                      <h3 className="text-2xl font-semibold mb-4 text-white group-hover:text-blue-400 transition-colors duration-300">
-                        {project.name}
-                      </h3>
-                      <p className="text-slate-400 mb-6 leading-relaxed group-hover:text-slate-300 transition-colors duration-300">
-                        {project.description}
-                      </p>
-                      <div className="flex flex-wrap gap-2 mb-6">
-                        {project.tech.map((tech) => (
-                          <motion.span
-                            key={tech}
-                            whileHover={{ scale: 1.1, y: -2, rotateX: 10 }}
-                            className="px-3 py-1 bg-slate-700/50 rounded-full text-xs text-slate-300 border border-slate-600/30 font-mono hover:border-slate-500/50 transition-all duration-200 shadow-lg"
-                            style={{
-                              boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-                            }}
-                          >
-                            {tech}
-                          </motion.span>
-                        ))}
-                      </div>
-                      <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="border-slate-600/50 text-slate-400 hover:bg-slate-700/50 hover:text-white bg-transparent group-hover:border-slate-500 transition-all duration-300 shadow-lg"
-                          onClick={() => window.open(project.github, "_blank")}
-                          style={{
-                            boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
-                          }}
-                        >
-                          <Github className="w-4 h-4 mr-2" />
-                          View Code
-                          <ExternalLink className="w-3 h-3 ml-2" />
-                        </Button>
-                      </motion.div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
       </section>
 
       {/* Enhanced Resume Section */}
@@ -1280,11 +1206,11 @@ export default function Portfolio() {
                       Education
                     </h3>
                     <div className="space-y-4">
-                      <p className="text-xl text-white font-medium">B.Tech - Computer Science and Engineering</p>
-                      <p className="text-lg text-slate-300">IITM (DCRUST Murthal)</p>
+                      <p className="text-xl text-white font-medium">MCA - Master of Computer Applications</p>
+                      <p className="text-lg text-slate-300">BPIBS (GGSIPU)</p>
                       <p className="text-slate-400 flex items-center">
                         <Globe className="w-4 h-4 mr-2" />
-                        Murthal, Haryana
+                        Delhi, India
                       </p>
                     </div>
                   </CardContent>
@@ -1367,7 +1293,7 @@ export default function Portfolio() {
 
                 <div className="space-y-4 sm:space-y-6">
                   <motion.a
-                    href="mailto:official.mohit.uchit@gmail.com"
+                    href="mailto:ankurshukla02@gmail.com"
                     whileHover={{ x: 10, scale: 1.02, rotateY: 5 }}
                     className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 p-3 sm:p-4 bg-slate-800/30 rounded-lg border border-slate-700/20 hover:border-slate-600/40 transition-all duration-300 cursor-pointer shadow-lg"
                     style={{
@@ -1376,11 +1302,11 @@ export default function Portfolio() {
                   >
                     <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
                     <span className="text-slate-300 font-mono text-sm sm:text-lg break-all">
-                      official.mohit.uchit@gmail.com
+                      ankurshukla02@gmail.com
                     </span>
                   </motion.a>
                   <motion.a
-                    href="tel:+919996974063"
+                    href="tel:+919599033405"
                     whileHover={{ x: 10, scale: 1.02, rotateY: 5 }}
                     className="flex flex-col sm:flex-row sm:items-center space-y-2 sm:space-y-0 sm:space-x-4 p-3 sm:p-4 bg-slate-800/30 rounded-lg border border-slate-700/20 hover:border-slate-600/40 transition-all duration-300 cursor-pointer shadow-lg"
                     style={{
@@ -1388,10 +1314,10 @@ export default function Portfolio() {
                     }}
                   >
                     <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
-                    <span className="text-slate-300 font-mono text-sm sm:text-lg">+91-9996974063</span>
+                    <span className="text-slate-300 font-mono text-sm sm:text-lg">+91-9599033405</span>
                   </motion.a>
                   <motion.a
-                    href="https://www.linkedin.com/in/mohituchit"
+                    href="https://www.linkedin.com/in/ankur-shukla-98136587/"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 10, scale: 1.02, rotateY: 5 }}
@@ -1402,11 +1328,11 @@ export default function Portfolio() {
                   >
                     <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
                     <span className="text-slate-300 font-mono text-sm sm:text-lg break-all">
-                      linkedin.com/in/mohituchit
+                      linkedin.com/in/ankurshukla02
                     </span>
                   </motion.a>
                   <motion.a
-                    href="https://github.com/mohit-uchit"
+                    href="https://github.com/ankurshukla02"
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ x: 10, scale: 1.02, rotateY: 5 }}
@@ -1417,7 +1343,7 @@ export default function Portfolio() {
                   >
                     <Github className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400 flex-shrink-0" />
                     <span className="text-slate-300 font-mono text-sm sm:text-lg break-all">
-                      github.com/mohit-uchit
+                      github.com/ankurshukla02
                     </span>
                   </motion.a>
                 </div>
@@ -1546,12 +1472,12 @@ export default function Portfolio() {
             viewport={{ once: true }}
           >
             <p className="text-slate-400 font-mono text-sm sm:text-lg mb-4 px-4">
-              © 2024 Mohit Uchit. Built with <span className="text-blue-400">Next.js</span> &{" "}
+              © 2024 Ankur Shukla. Built with <span className="text-blue-400">Next.js</span> &{" "}
               <span className="text-slate-300">Tailwind CSS</span>.
             </p>
             <div className="flex justify-center space-x-4 sm:space-x-6">
               <motion.a
-                href="https://github.com/mohit-uchit"
+                href="https://github.com/ankurshukla02"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: 5, y: -3 }}
@@ -1559,14 +1485,14 @@ export default function Portfolio() {
                 <Github className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 hover:text-blue-400 transition-colors cursor-pointer" />
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/mohituchit"
+                href="https://www.linkedin.com/in/ankur-shukla-98136587/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.2, rotate: -5, y: -3 }}
               >
                 <Linkedin className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 hover:text-blue-400 transition-colors cursor-pointer" />
               </motion.a>
-              <motion.a href="mailto:official.mohit.uchit@gmail.com" whileHover={{ scale: 1.2, rotate: 5, y: -3 }}>
+              <motion.a href="mailto:ankurshukla02@gmail.com" whileHover={{ scale: 1.2, rotate: 5, y: -3 }}>
                 <Mail className="w-5 h-5 sm:w-6 sm:h-6 text-slate-400 hover:text-blue-400 transition-colors cursor-pointer" />
               </motion.a>
             </div>
