@@ -294,26 +294,37 @@ export default function Portfolio() {
 
   const expertSkills = [
     "JavaScript",
-    "SQL",
     "Node.js",
+    "TypeScript",
+    "SQL",
     "Express.js",
     "MongoDB",
     "Sequelize",
     "Redis",
+    "ElasticSearch",
     "BullMQ",
     "Git",
     "GitHub",
     "MySQL",
     "PHP Laravel",
     "Docker",
-    "AWS S3",
+    "HTML",
+    "CSS",
+    "AJAX",
+    "JADE",
+    "React.js",
+    "Chart.js",
+    "Plotly.js",
+    "GCP (Google Cloud Platform)",
+    "AWS (S3, SQS, SES, EC2, Lambda)",
   ]
 
   const learningSkills = [
-    { name: "React.js", progress: 75, color: "bg-gradient-to-r from-blue-500 to-blue-600" },
-    { name: "TypeScript", progress: 65, color: "bg-gradient-to-r from-slate-500 to-blue-600" },
-    { name: "Vue.js", progress: 80, color: "bg-gradient-to-r from-blue-400 to-slate-600" },
-    { name: "Tailwind CSS", progress: 85, color: "bg-gradient-to-r from-slate-400 to-blue-500" },
+    { name: "Node.js", progress: 100, color: "bg-gradient-to-r from-blue-500 to-blue-600" },
+    { name: "TypeScript", progress: 100, color: "bg-gradient-to-r from-slate-500 to-blue-600" },
+    { name: "HTML CSS", progress: 90, color: "bg-gradient-to-r from-blue-400 to-slate-600" },
+    { name: "Database", progress: 85, color: "bg-gradient-to-r from-slate-400 to-blue-500" },
+    { name: "Design Doc", progress: 80, color: "bg-gradient-to-r from-slate-400 to-blue-500" },
   ]
 
   const downloadResume = () => {
@@ -670,19 +681,13 @@ export default function Portfolio() {
                 viewport={{ once: true }}
               >
                 <p className="text-lg text-slate-300 mb-6 leading-relaxed">
-                  Senior Software Engineer with expertise in <span className="text-blue-400 font-semibold">Node.js</span>,{" "}
-                  <span className="text-slate-200 font-semibold">MySQL</span>, and{" "}
-                  <span className="text-blue-300 font-semibold">Redis</span>, delivering scalable APIs and optimizing
-                  system performance by up to <span className="text-green-400 font-bold">45%</span>. Currently working
-                  at Truckpedia, I specialize in building robust backend architectures, automating cloud operations, and
-                  implementing secure web systems.
+                  Senior Software Engineer with 6+ years of experience in designing, developing, and maintaining scalable web applications and APIs. He is proficient in Node.js, TypeScript, MongoDB, and AWS. <span className="text-blue-400 font-semibold">Node.js, TypeScript</span>,{" "}
+                  <span className="text-slate-200 font-semibold">MySQL, MongoDB</span>, and{" "}
+                  <span className="text-blue-300 font-semibold">AWS</span>, delivering scalable APIs and optimizing
+                  system performance by up to <span className="text-green-400 font-bold">80%</span>. Currently, at Truckpedia,  enhanced a digital payments module, established EDI communication, integrated tracking solutions, and migrated the codebase from PHP to Node.js, significantly improving application performance. He also led and supervised a team of engineers.
                 </p>
                 <p className="text-lg text-slate-300 mb-8 leading-relaxed">
-                  My experience spans from developing marketing campaign systems and QR code tracking solutions to
-                  creating automated cloud management bots. I'm passionate about{" "}
-                  <span className="text-red-400 font-semibold">cybersecurity</span>, having organized webinars and
-                  developed penetration testing tools, while maintaining a focus on efficiency, scalability, and
-                  reliability in all projects.
+                  Skills include <span className="text-blue-400 font-semibold">Node.js (Express), TypeScript, JavaScript, PHP (Laravel), Java (Basic), MongoDB, ElasticSearch, Redis, MySQL, Amazon AWS (S3, SES), and Google Cloud Platform (GCP)</span>. He is skilled in collaborating within agile teams to deliver innovative solutions that align with business objectives.
                 </p>
 
                 {/* Enhanced Stats with 3D effect */}
@@ -1000,7 +1005,7 @@ export default function Portfolio() {
                         </p>
                       </div>
                       <span className="text-blue-400 font-medium font-mono bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/30 shadow-lg">
-                        April 2020 - November 2022
+                        Apr 2020 - Nov 2022
                       </span>
                     </div>
                     <ul className="text-slate-300 space-y-3">
@@ -1053,6 +1058,87 @@ export default function Portfolio() {
                         <span className="text-blue-400 mr-3 mt-1">▶</span>
                         Effectively handled and maintained multiple code repositories simultaneously, ensuring consistent quality and delivery across projects.
 
+                      </li>
+                    </ul>
+                  </CardContent>
+                </Card>
+              </motion.div>
+               <motion.div
+                whileHover={{ scale: 1.02, y: -5, rotateX: 2 }}
+                transition={{ duration: 0.3 }}
+                style={{ transformStyle: "preserve-3d" }}
+              >
+                <Card
+                  className="bg-gradient-to-br from-slate-800/60 to-slate-900/60 backdrop-blur-md border-slate-700/30 hover:border-slate-600/60 transition-all duration-300 overflow-hidden relative shadow-2xl"
+                  style={{
+                    boxShadow: "0 25px 50px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1)",
+                  }}
+                >
+                  <motion.div
+                    className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-slate-500 to-blue-600"
+                    initial={{ scaleX: 0 }}
+                    whileInView={{ scaleX: 1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    viewport={{ once: true }}
+                  />
+                  <CardContent className="p-8">
+                    <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-6">
+                      <div>
+                        <h3 className="text-2xl font-semibold text-blue-400 flex items-center mb-2">
+                          <Code className="w-6 h-6 mr-3" />
+                          Software Developer
+                        </h3>
+                        <p className="text-xl text-white font-medium">Rank Me Online</p>
+                        <p className="text-slate-400 flex items-center">
+                          <Wifi className="w-4 h-4 mr-2" />
+                          Saket, Delhi
+                        </p>
+                      </div>
+                      <span className="text-blue-400 font-medium font-mono bg-blue-500/10 px-4 py-2 rounded-full border border-blue-500/30 shadow-lg">
+                        Jun 2018 - Mar 2020
+                      </span>
+                    </div>
+                    <ul className="text-slate-300 space-y-3">
+                      <li className="flex items-start">
+                        Building a comprehensive platform that allows brands to view their performance from the customer’s perspective. Analyzing relevant data from social media, Google search results, reviews, ratings, complaints, and mentions, applying sentiment analysis, and generating actionable insights for informed decision-making.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-green-400 mr-3 mt-1">★</span>
+                        <span className="text-green-400 font-semibold">
+                          Successfully expanded and managed the Rank Me Online dashboard, delivering a user-friendly platform for brand performance insights.
+                        </span>
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Designed and executed a digital payments module using Razorpay, streamlining payment processes for end users.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Created a variety of data visualization graphs to represent brand performance metrics, utilizing Chart.js and Plotly.js.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                       Integrated YouTube APIs to automate data fetching and storage in MongoDB, ensuring efficient data handling.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Enhanced systematised solutions for generating PDF, Excel, CSV , and infographic files, tailored to meet customer-specific requirements for presenting top insights.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Managed file and photo storage and retrieval through AWS S3, ensuring secure and scalable cloud storage solutions.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Built a robust email framework leveraging AWS SES and the Pug templating engine for dynamic email content generation.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Crawled and stored public review and article data from multiple platforms, contributing to comprehensive brand performance analysis.
+                      </li>
+                      <li className="flex items-start">
+                        <span className="text-blue-400 mr-3 mt-1">▶</span>
+                        Oversaw and executed monthly technical tasks, ensuring alignment with company goals and timely delivery of projects.
                       </li>
                     </ul>
                   </CardContent>
@@ -1236,15 +1322,11 @@ export default function Portfolio() {
                     <ul className="text-slate-300 space-y-4">
                       <li className="flex items-center">
                         <Star className="w-4 h-4 mr-3 text-yellow-400" />
-                        Node.js - Udemy
+                        PHP Laravel - Udemy
                       </li>
                       <li className="flex items-center">
                         <Star className="w-4 h-4 mr-3 text-yellow-400" />
-                        Ethical Hacking - Code Virus Security
-                      </li>
-                      <li className="flex items-center">
-                        <Star className="w-4 h-4 mr-3 text-yellow-400" />
-                        Web Security Fundamentals - Great Learning
+                        Android App Development - VMDD Technologies
                       </li>
                     </ul>
                   </CardContent>
